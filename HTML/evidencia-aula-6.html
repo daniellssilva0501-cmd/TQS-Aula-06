@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Evidência - Aula 6</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 30px;
+        color: #222;
+        background-color: #f4f4f4;
+      }
+
+      main {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+      }
+
+      h1,
+      h2 {
+        color: #1f4e79;
+      }
+
+      section {
+        margin-bottom: 30px;
+      }
+
+      code {
+        background-color: #eeeeee;
+        padding: 3px 6px;
+        border-radius: 4px;
+      }
+
+      pre {
+        background-color: #222;
+        color: #00ff66;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+
+      .informacao {
+        background-color: #e8f1fb;
+        padding: 15px;
+        border-left: 5px solid #1f4e79;
+      }
+
+      img {
+        max-width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      footer {
+        text-align: center;
+        color: #666;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1>Evidência da Aula 6</h1>
+        <p><strong>Disciplina:</strong> Qualidade de Software</p>
+        <p><strong>Aluno:</strong> Daniel Silva</p>
+        <p><strong>Turma:</strong> 2º DS</p>
+        <p><strong>Data:</strong> 23/11/2026</p>
+      </header>
+
+      <hr />
+
+      <section>
+        <h2>1. Objetivo da atividade</h2>
+
+        <p>
+          O objetivo desta atividade foi executar e compreender testes unitários
+          em PHP utilizando o PHPUnit.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. Estrutura do projeto</h2>
+
+        <ul>
+          <li>
+            <code>src/Carrinho.php</code> — classe do carrinho de compras;
+          </li>
+          <li>
+            <code>src/ValidadorPasse.php</code> — classe para validar senhas;
+          </li>
+          <li>
+            <code>tests/CarrinhoTest.php</code> — testes da classe Carrinho;
+          </li>
+          <li>
+            <code>tests/ValidadorPasseTest.php</code> — testes da classe
+            ValidadorPasse;
+          </li>
+          <li>
+            <code>phpunit</code> — programa utilizado para executar os testes.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. Execução dos testes</h2>
+
+        <p>Para executar os testes, utilizei o seguinte comando no terminal:</p>
+
+        <pre>php phpunit tests</pre>
+
+        <p>Resultado obtido:</p>
+
+        <!-- Substitua o exemplo abaixo pelo resultado real do seu terminal. -->
+        <pre>
+                PHPUnit 11.5.57 by Sebastian Bergmann and contributors.
+
+                Runtime:       PHP 8.5.7
+
+                ......................                                            22 / 22 (100%)
+
+                Time: 00:00.007, Memory: 26.00 MB
+
+                OK (22 tests, 24 assertions)
+        </pre>
+      </section>
+
+      <section>
+        <h2>4. Testes realizados na classe Carrinho</h2>
+
+        <ul>
+          <li>Verificação do total de um carrinho vazio;</li>
+          <li>Verificação do total com um ou mais produtos;</li>
+          <li>Contagem de artigos no carrinho;</li>
+          <li>Verificação se o carrinho está vazio;</li>
+          <li>Teste do desconto para estudantes;</li>
+          <li>Teste de exceções para quantidade inválida;</li>
+          <li>Teste de exceções para preço negativo.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. Testes realizados na classe ValidadorPasse</h2>
+
+        <ul>
+          <li>Senha com menos de 8 caracteres;</li>
+          <li>Senha sem letra maiúscula;</li>
+          <li>Senha sem número;</li>
+          <li>Senha válida.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. Evidência da execução</h2>
+
+        <p>A imagem abaixo mostra a execução dos testes no terminal.</p>
+
+        <!--
+                Coloque uma imagem na mesma pasta deste arquivo
+                com o nome captura-testes.png.
+            -->
+        <img src="captura-testes.png" alt="Captura dos testes" />
+
+        <p>
+          Caso a imagem não apareça, verifique se o arquivo se chama exatamente
+          <code>captura-testes.png</code> e está na mesma pasta deste HTML.
+        </p>
+      </section>
+
+      <section>
+        <h2>7. Conclusão</h2>
+
+        <p>
+          A atividade permitiu compreender a criação e a execução de testes
+          unitários em PHP. Também foi possível verificar testes de retorno,
+          testes de limites e testes de exceções utilizando o PHPUnit.
+        </p>
+      </section>
+
+      <footer>Evidência elaborada por Daniel Silva - Aula 6</footer>
+    </main>
+  </body>
+</html>
